@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--^ ============= Font Awesome ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!--^ ......................Navbar....................... -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top ">
+      <div class="container">
+        <div class="logo d-flex align-items-center">
+          <img src="images/logo@2x.png" alt="logo-image" width="70px" />
+          <a class="navbar-brand ms-2 fs-4 fw-bolder pt-3" href="#">Weather</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3 text-center">
+            <li class="nav-item px-md-3 py-sm-2 py-lg-0 py-2">
+              <a class="nav-link active py-1" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item px-md-3 py-sm-2 py-lg-0 py-2">
+              <a class="nav-link py-1 text-black" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item px-md-3 py-sm-2 py-lg-0 py-2">
+              <a class="nav-link py-1 text-black" href="#">Photos</a>
+            </li>
+            <li class="nav-item px-md-3 py-sm-2 py-lg-0 py-2">
+              <a class="nav-link py-1 text-black" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--^........................................header...............................  -->
+    <header class="py-5 h-auto">
+      <div class="container py-5">
+        <div
+          class="input-box d-block m-auto d-flex justify-content-center py-5"
+        >
+          <input
+            id="cityNameInput"
+            type="text"
+            placeholder="Find your location"
+            class="w-75 rounded-5 px-4 py-2"
+          />
+          <button type="submit" class="rounded-5 px-4 py-2 ms-2" id="SearchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div>
+        <div id="alertSearch" class="text-danger d-block ms-5"></div>
+
+        <div class="row g-2 g-md-4 pt-4 dataDays">
+
+      </div>
+      <footer class="site-footer py-5 ">
+        <div class="container ">
+          <div
+            class="input-box d-block m-auto d-flex justify-content-center py-5 w-75"
+          >
+            <input
+              id="emailInput"
+              type="text"
+              placeholder="Enter your email to subscribe..."
+              class="w-100 rounded-5 px-4 py-2"
+            />
+            <button
+              type="submit"
+              class="rounded-5 px-4 py-2 ms-2"
+              id="SubscribeBtn
+            "
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <ul
+            class="social-links list-unstyled d-flex justify-content-center align-items-center py-2"
+          >
+            <li class="d-flex justify-content-center align-items-center mx-2">
+              <a href="#"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+            </li>
+            <li class="d-flex justify-content-center align-items-center mx-2">
+              <a href="#"><i class="fa-brands fa-twitter fs-5"></i></a>
+            </li>
+            <li class="d-flex justify-content-center align-items-center mx-2">
+              <a href="#"><i class="fa-brands fa-google-plus-g fs-5"></i></a>
+            </li>
+            <li class="d-flex justify-content-center align-items-center mx-2">
+              <a href="#"><i class="fa-brands fa-pinterest fs-5"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="colophon text-center py-3">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </footer>
+    </header>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
